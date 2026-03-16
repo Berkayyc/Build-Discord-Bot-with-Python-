@@ -1,0 +1,29 @@
+## ⚙️ Discord Developer Portal Setup (Prerequisite)
+
+Before running the code, you need to create a bot account on Discord and invite it to your server. Follow these steps:
+
+### 1. Create an Application
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications) and log in with your Discord account.
+2. Click the **"New Application"** button in the top right corner.
+3. Give your bot a name (e.g., "MemeBot") and click **"Create"**.
+
+### 2. Set Up the Bot
+1. In the left sidebar, click on the **"Bot"** tab.
+2. Here, you can change your bot's username and upload a profile picture.
+3. Scroll down to the **"Privileged Gateway Intents"** section.
+4. Toggle on the **"Message Content Intent"** (This is crucial; without it, the bot cannot read what users type).
+5. Click the green **"Save Changes"** button at the bottom.
+
+### 3. Get Your Token
+1. Still on the **"Bot"** tab, scroll up to the "Token" section.
+2. Click the **"Reset Token"** button to generate your unique password.
+3. Copy this token. **Warning:** Treat this token like your bank password. Never share it with anyone or upload it publicly to GitHub.
+
+### 4. Invite the Bot to Your Server
+1. In the left sidebar, click on **"OAuth2"**, then select **"URL Generator"**.
+2. Under "Scopes", check the box for **`bot`**.
+3. Scroll down to "Bot Permissions" and check **`Administrator`** (or just select `Send Messages` and `Read Message History` for basic needs).
+4. Copy the generated URL at the bottom of the page.
+5. Paste that URL into your web browser, select your Discord server from the dropdown list, and click "Authorize".
+
+Your bot is now resting offline in your server! Now you can proceed to the setup steps below to bring it online.
